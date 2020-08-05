@@ -1,0 +1,30 @@
+---
+layout: default
+
+images:
+  - url: 3404CharlotteRose/Charlotte-Rose-1.jpg
+  - url: 3404CharlotteRose/Charlotte-Rose-2.jpg
+  - url: 3404CharlotteRose/Charlotte-Rose-3.jpg
+  - url: 3404CharlotteRose/Charlotte-Rose-4.jpg
+  - url: 3404CharlotteRose/Charlotte-Rose-5.jpg
+  - url: 3404CharlotteRose/Charlotte-Rose-6.jpg
+  - url: 3404CharlotteRose/Charlotte-Rose-7.jpg
+  - url: 3404CharlotteRose/Charlotte-Rose-8.jpg
+  - url: 3404CharlotteRose/Charlotte-Rose-9.jpg
+  - url: 3404CharlotteRose/Charlotte-Rose-10.jpg
+---
+<div class="main-gallery">
+  {% for image in page.images %}
+    <div class="main-gallery__item"
+         style="background-image: url(images/{{ image.url }})"></div>
+  {% endfor %}
+</div>
+
+<!-- <div class="nav-gallery-wrapper">
+  <div class="nav-gallery">
+    {% for image in page.images %}
+      <div class="nav-gallery__item"
+           style="background-image: url(images/{{ image.url }})"></div>
+    {% endfor %}
+  </div>
+</div> -->

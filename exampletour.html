@@ -1,0 +1,25 @@
+---
+layout: default
+
+images:
+  - url: sampletour/sample-1.jpg
+  - url: sampletour/sample-2.jpg
+  - url: sampletour/sample-3.jpg
+  - url: sampletour/sample-4.jpg
+  - url: sampletour/sample-5.jpg
+---
+<div class="main-gallery">
+  {% for image in page.images %}
+    <div class="main-gallery__item"
+         style="background-image: url(images/{{ image.url }})"></div>
+  {% endfor %}
+</div>
+
+<!-- <div class="nav-gallery-wrapper">
+  <div class="nav-gallery">
+    {% for image in page.images %}
+      <div class="nav-gallery__item"
+           style="background-image: url(images/{{ image.url }})"></div>
+    {% endfor %}
+  </div>
+</div> -->
